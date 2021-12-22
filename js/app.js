@@ -112,6 +112,14 @@ function displayInput(e) {
     items[2].style.display = 'block'
     calculateItemPrice()
   } else {
+    //get the p element
+    const items = e.target.nextElementSibling.children
+    //show the item name
+    items[0].style.display = 'block'
+    //showthe item price
+    items[1].style.display = 'block'
+    //hide input to enter number of items
+    items[2].style.display = 'none'
   }
 }
 
