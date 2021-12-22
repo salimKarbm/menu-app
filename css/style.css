@@ -1,3 +1,121 @@
-body {
-  background-color: red;
+* {
+  padding: 0;
+  margin: 0;
+}
+.container {
+  background-image: url('../images/wine.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  vertical-align: middle;
+  border-radius: 1em;
+  min-height: 100vh;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5em 0;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0 2em 0;
+}
+header h2 {
+  color: #e82f64;
+  font-size: 3em;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+  padding: 0.5em 0 0 0;
+  margin: 0 0 0 0.5em;
+}
+header p {
+  font-size: 1.2em;
+  color: #fff;
+  font-family: 'Courier New', Courier, monospace;
+  text-transform: capitalize;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #fff;
+  padding: 0 2em;
+  width: 60vw;
+}
+.menu h4 {
+  color: #aa506a;
+  font-size: 1.8em;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.items-category {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  margin-bottom: 1.5em;
+}
+.item-wrapper .items {
+  width: 60vw;
+  display: flex;
+  justify-content: space-between;
+}
+.items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.items span {
+  font-size: 1em;
+  text-transform: capitalize;
+}
+.items input[type='number'] {
+  display: 'none';
+  width: 50vw;
+}
+.main button {
+  color: #fff;
+  background-color: #e82f64;
+  padding: 0.5em;
+  border-radius: 1em;
+  font-size: 1em;
+}
+
+.item-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+table {
+  color: #fff;
+  min-height: 30vh;
+}
+table th {
+  width: 20vw;
+}
+table td {
+  width: 30vw;
+  text-align: center;
+}
+table .item-name {
+  text-align: left;
+  padding-left: 2em;
+}
+@media only screen and (min-width: 768px) {
+  table .item-name {
+    padding-left: 4em;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  table .item-name {
+    padding-left: 6em;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  table .item-name {
+    padding-left: 8em;
+  }
 }
